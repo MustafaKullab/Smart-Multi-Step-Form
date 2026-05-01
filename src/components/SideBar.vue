@@ -5,7 +5,7 @@
         <div
           class="step1 mt-4 d-flex flex-column flex-lg-row text-center text-lg-start align-items-center gap-4 mb-3"
         >
-          <div class="stepNum text-light active">1</div>
+          <div class="stepNum text-light" :class="{ active: useStore.currentStep === 1 }">1</div>
           <div class="stepText">
             <p class="stepCount m-0 text-uppercase">step 1</p>
             <span class="title text-uppercase text-light fw-bold">your info</span>
@@ -14,7 +14,7 @@
         <div
           class="step2 mt-4 d-flex flex-column flex-lg-row text-center text-lg-start align-items-center gap-4 mb-3"
         >
-          <div class="stepNum text-light">2</div>
+          <div class="stepNum text-light" :class="{ active: useStore.currentStep === 2 }">2</div>
           <div class="stepText">
             <p class="stepCount m-0 text-uppercase">step 2</p>
             <span class="title text-uppercase text-light fw-bold">select plan</span>
@@ -23,7 +23,7 @@
         <div
           class="step3 mt-4 d-flex flex-column flex-lg-row text-center text-lg-start align-items-center gap-4 mb-3"
         >
-          <div class="stepNum text-light">3</div>
+          <div class="stepNum text-light" :class="{ active: useStore.currentStep === 3 }">3</div>
           <div class="stepText">
             <p class="stepCount m-0 text-uppercase">step 3</p>
             <span class="title text-uppercase text-light fw-bold">add-ons</span>
@@ -32,7 +32,7 @@
         <div
           class="step4 mt-4 d-flex flex-column flex-lg-row text-center text-lg-start align-items-center gap-4 mb-3"
         >
-          <div class="stepNum text-light">4</div>
+          <div class="stepNum text-light" :class="{ active: useStore.currentStep === 4 }">4</div>
           <div class="stepText">
             <p class="stepCount m-0 text-uppercase">step 4</p>
             <span class="title text-uppercase text-light fw-bold">summary</span>
@@ -42,6 +42,11 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSubscriptionStore } from "@/stores/useSubscriptionStore";
+const useStore = useSubscriptionStore();
+</script>
 
 <style lang="scss" scoped>
 .SideBar {
