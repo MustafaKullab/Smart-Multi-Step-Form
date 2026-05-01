@@ -5,6 +5,11 @@ This project provides a seamless user experience by guiding users through multip
 
 ---
 
+## 📸 Project Preview
+<img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/dbca7cff-1be1-4c08-8b77-e289886a1fde" />
+
+---
+
 ## 📌 Challenge
 This project is a solution to a Frontend Mentor multi-step form challenge.
 
