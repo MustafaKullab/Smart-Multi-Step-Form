@@ -51,11 +51,11 @@ const useStore = useSubscriptionStore();
 <style lang="scss" scoped>
 .SideBar {
   height: 77vh;
-  background-image: url("../public/images/bg-sidebar-desktop.svg");
+  background-image: url("images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
   overflow: hidden;
   @media (max-width: 767px) {
-    background-image: url("../public/images/bg-sidebar-mobile.svg") !important;
+    background-image: url("images/bg-sidebar-mobile.svg") !important;
     background-size: 100%;
     height: 21vh;
   }
